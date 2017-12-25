@@ -16,6 +16,7 @@ Imports:
     jsonlite,
     magrittr,
     rsvg,
+    shiny,
     storage
 Suggests:
     testthat,

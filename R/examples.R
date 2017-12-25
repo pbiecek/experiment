@@ -131,8 +131,10 @@ simulate_london_meters <- function (overwrite = TRUE)
 
 
 
+#' @export
 simulate_modelling <- function ()
 {
+  clean_stash(overwrite, internal_state)
   user_space <- eval_space()
 
   user_space$simulate(x <- lm(Sepal.Width ~ Sepal.Length, iris))
